@@ -1,0 +1,19 @@
+type Employee{
+    firstName:String
+    lastName:String
+    empId:Int!
+    address:Address
+    
+}
+
+type Address{
+    apartmentNo:Int
+    street:String
+    city:String
+    postalCode:String
+}
+
+type Query{
+    searchEmployee(id:Int):Employee
+    findAllEmployees:[Employee]
+}
